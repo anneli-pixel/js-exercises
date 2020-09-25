@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+  <body>
+    <script>
+      let field = "#";
+      let space = " ";
+      let linebreak = "\n";
+      let size = 8;
+      chessboard = "";
+
+      for (let number = 1; number < 72; number++) {
+        if (number % 9 === 0 ) {
+          chessboard += linebreak;
+        } else if (number % 2 === 0 ) {
+          chessboard += field;
+        } else {
+          chessboard += space;
+        }
+      }
+      console.log(chessboard);
+    </script>
+  </body>
+</html>
