@@ -13,6 +13,19 @@
       }
 
       console.log(countBs("BbBaBhB"));
+
+      function countChars(string, char) {
+        let counter = 0;
+        for (let position = string.length-1; position >= 0; position -= 1) {
+          if (string[position] == char) {
+            counter += 1;
+          }
+        }
+        return counter;
+      }
+
+      console.log(countChars("HaHasssss", "S"));
+
     </script>
   </body>
 </html>
