@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html>
+  <body>
+    <script>
+      function countBs(string) {
+        let counter = 0;
+        for (let position = string.length-1; position >= 0; position -= 1) {
+          if (string[position] == "B") {
+            counter += 1;
+          }
+        }
+        return counter;
+      }
+
+      console.log(countBs("BbBaBhB"));
+    </script>
+  </body>
+</html>
